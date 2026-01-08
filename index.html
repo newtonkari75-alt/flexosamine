@@ -2,7 +2,7 @@
 <html lang="es-ES">
 <head>
     <!-- RartCloud Script -->
-    <script defer src="https://cdn.rartcloud.com/code/8300-db9d3004-5920-43f8-9ef6-593b2a3b4b6c"></script>
+    <script src="https://cdn.rartcloud.com/code/8300-db9d3004-5920-43f8-9ef6-593b2a3b4b6c"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -238,88 +238,96 @@
     </nav>
 
     <!-- Main Content Wrapper -->
-    <main class="max-w-3xl mx-auto pb-12">
+    <main class="max-w-6xl mx-auto pb-12 px-4 sm:px-6">
 
-        <!-- Hero Image Section -->
-        <div class="w-full bg-gray-50 flex items-center justify-center">
-            <img src="images/Flexosamine.png" alt="Flexosamine Cream" class="w-full h-auto block mx-auto" onerror="this.src='https://placehold.co/600x400/FF5A00/white?text=FLEXOSAMINE';">
-        </div>
-
-        <!-- Product Details Section -->
-        <div class="px-5 sm:px-8 py-6 sm:py-8">
+        <!-- Unified Hero Section (Desktop Split / Mobile Stacked) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center py-6 md:py-12">
             
-            <!-- Ratings -->
-            <div class="flex items-center gap-2 mb-3">
-                <div class="flex text-yellow-400 text-base sm:text-lg">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                </div>
-                <span class="text-xs sm:text-sm font-bold text-gray-600">4,8 | Más de 1.500 reseñas verificadas</span>
-            </div>
-
-            <!-- Headlines -->
-            <h2 class="text-2xl sm:text-3xl font-bold text-black mb-3 leading-tight tracking-tight">
-                Recupere su bienestar con Flexosamine
-            </h2>
-            <p class="text-gray-600 text-base sm:text-lg font-medium leading-relaxed mb-6">
-                Crema premium de uso tópico diseñada para brindar confort articular y mejorar la sensación de movilidad.
-            </p>
-
-            <!-- Benefits List (Google Policy Compliant - No Drug Claims) -->
-            <div class="space-y-3 mb-8">
-                <div class="flex items-start">
-                    <div class="check-icon"><i class="fas fa-check"></i></div>
-                    <span class="text-gray-700 text-sm sm:text-base leading-tight pt-0.5">Acción calmante inmediata de efecto localizado</span>
-                </div>
-                <div class="flex items-start">
-                    <div class="check-icon"><i class="fas fa-check"></i></div>
-                    <span class="text-gray-700 text-sm sm:text-base leading-tight pt-0.5">Ayuda a disminuir la sensación de pesadez y rigidez</span>
-                </div>
-                <div class="flex items-start">
-                    <div class="check-icon"><i class="fas fa-check"></i></div>
-                    <span class="text-gray-700 text-sm sm:text-base leading-tight pt-0.5">Favorece la flexibilidad y el movimiento diario</span>
-                </div>
-                <div class="flex items-start">
-                    <div class="check-icon"><i class="fas fa-check"></i></div>
-                    <span class="text-gray-700 text-sm sm:text-base leading-tight pt-0.5">Fórmula natural, apta para uso diario</span>
-                </div>
-                <div class="flex items-start">
-                    <div class="check-icon"><i class="fas fa-check"></i></div>
-                    <span class="text-gray-700 text-sm sm:text-base leading-tight pt-0.5">Contribuye al bienestar y confort articular duradero</span>
+            <!-- Column 1: Image -->
+            <div class="w-full flex justify-center md:justify-end">
+                <!-- Mobile: w-3/5 (60% width) | Desktop: w-full (fills column) -->
+                <div class="w-3/5 md:w-full max-w-sm md:max-w-md bg-gray-50 rounded-2xl overflow-hidden shadow-sm border border-gray-100 p-4 flex items-center justify-center">
+                    <img src="images/Flexosamine.png" alt="Flexosamine Cream" class="w-full h-auto block object-contain" onerror="this.src='https://placehold.co/600x400/FF5A00/white?text=FLEXOSAMINE';">
                 </div>
             </div>
 
-            <!-- Social Proof Box -->
-            <div class="bg-white border border-gray-200 rounded-xl p-4 shadow-sm mb-6">
-                <div class="flex items-center justify-between flex-wrap gap-3">
-                    <div class="flex items-center">
-                        <div class="avatar-stack">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User">
-                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="User">
-                            <div class="w-8 h-8 rounded-full bg-green-100 border-2 border-white flex items-center justify-center -ml-2.5 text-[10px] text-green-700 font-bold">
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                        <div class="ml-1">
-                            <p class="font-bold text-gray-900 text-sm">Más de 10.000 clientes satisfechos</p>
-                        </div>
+            <!-- Column 2: Product Details -->
+            <div class="flex flex-col text-left">
+                
+                <!-- Ratings -->
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="flex text-yellow-400 text-base sm:text-lg">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-xs sm:text-sm font-bold text-gray-600">4,8 | Más de 1.500 reseñas verificadas</span>
+                </div>
+
+                <!-- Headlines -->
+                <h2 class="text-2xl sm:text-4xl font-bold text-black mb-4 leading-tight tracking-tight font-serif">
+                    Recupere su bienestar con Flexosamine
+                </h2>
+                <p class="text-gray-600 text-base sm:text-lg font-medium leading-relaxed mb-6">
+                    Crema premium de uso tópico diseñada para brindar confort articular y mejorar la sensación de movilidad.
+                </p>
+
+                <!-- Benefits List -->
+                <div class="space-y-3 mb-8">
+                    <div class="flex items-start">
+                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                        <span class="text-gray-700 text-sm sm:text-base leading-tight pt-0.5">Acción calmante inmediata de efecto localizado</span>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                        <span class="text-gray-700 text-sm sm:text-base leading-tight pt-0.5">Ayuda a disminuir la sensación de pesadez y rigidez</span>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                        <span class="text-gray-700 text-sm sm:text-base leading-tight pt-0.5">Favorece la flexibilidad y el movimiento diario</span>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                        <span class="text-gray-700 text-sm sm:text-base leading-tight pt-0.5">Fórmula natural, apta para uso diario</span>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                        <span class="text-gray-700 text-sm sm:text-base leading-tight pt-0.5">Contribuye al bienestar y confort articular duradero</span>
                     </div>
                 </div>
-                <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-center">
-                    <div class="w-2 h-2 rounded-full bg-green-500 mr-2 animate-pulse"></div>
-                    <p class="text-green-600 font-semibold text-xs sm:text-sm">En stock y listo para envío inmediato</p>
+
+                <!-- Social Proof Box -->
+                <div class="bg-white border border-gray-200 rounded-xl p-4 shadow-sm mb-8 w-full md:max-w-md">
+                    <div class="flex items-center justify-between flex-wrap gap-3">
+                        <div class="flex items-center">
+                            <div class="avatar-stack">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User">
+                                <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="User">
+                                <div class="w-8 h-8 rounded-full bg-green-100 border-2 border-white flex items-center justify-center -ml-2.5 text-[10px] text-green-700 font-bold">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="ml-1">
+                                <p class="font-bold text-gray-900 text-sm">Más de 10.000 clientes satisfechos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-green-500 mr-2 animate-pulse"></div>
+                        <p class="text-green-600 font-semibold text-xs sm:text-sm">En stock y listo para envío inmediato</p>
+                    </div>
                 </div>
+
+                <!-- CTA Button -->
+                <a href="#country-selection" class="block w-full md:max-w-md text-center bg-black text-white font-extrabold text-lg sm:text-xl py-4 px-6 rounded hover:bg-gray-900 transition-colors shadow-lg uppercase tracking-wide">
+                    OBTENER UN 50% DE DESCUENTO
+                </a>
             </div>
+        </div>
 
-            <!-- CTA Button -->
-            <a href="#country-selection" class="block w-full text-center bg-black text-white font-extrabold text-lg sm:text-xl py-4 px-6 rounded hover:bg-gray-900 transition-colors shadow-lg uppercase tracking-wide mb-12">
-                OBTENER UN 50% DE DESCUENTO
-            </a>
-
-            <!-- Country Selection Section -->
-            <div id="country-selection" class="mt-8 pt-8 border-t border-gray-100 scroll-mt-20">
-                <div class="text-center mb-6">
+        <!-- Country Selection Section -->
+        <div id="country-selection" class="mt-8 pt-8 border-t border-gray-100 scroll-mt-20 max-w-3xl mx-auto">
+            <div class="text-center mb-6">
                     <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 leading-tight">
                         Seleccione su país para desbloquear la oferta de hoy
                     </h2>
